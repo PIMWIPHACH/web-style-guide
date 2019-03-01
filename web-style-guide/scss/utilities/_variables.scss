@@ -1,0 +1,81 @@
+//At minimum, create variables for fonts, breakpoints, and colors.
+
+// Font Stacks
+
+$font-url--google: "http://fonts.googleapis.com/css?family=Raleway:100,300,400,700,900";
+$font-family--primary: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family--secondary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Font Weights
+
+$bodyFont: 12px;
+
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+$font-weight--ultra-bold: 900;
+
+/* COLORS ------------------------------------------- */
+
+// Descriptive color variables
+
+$white: #fff;
+$black: #000;
+$grey: #666666;
+$blue: #1cc9f5;
+$darkblue: #0a99bd;
+$blue-green: #38ecce;
+$green: #63cc82;
+$red: #eb462a;
+$orange: #ff9216;
+$purple: #903eee;
+
+// Functional color variables
+
+$color-default: $blue;
+$color-success: $green;
+$color-error: $red;
+$color-warning: $orange;
+$color-info: $purple;
+
+$color-text: $black;
+$color-bg: $blue;
+$color-bg-headline: $blue-green;
+$color-text-button: $white;
+
+$color-theme-col-12: #38ecce;
+$color-theme-col-6: #1d81a0;
+$color-theme-col-4: #1cc9f5;
+$color-theme-col-3: #d1a8ff;
+$color-theme-col-5: #8edda7;
+$color-theme-col-7: #f59b8f;
+$color-theme-col-8: #ff7d56;
+
+$color-link-default: $blue;
+$color-link-visited: $darkblue;
+
+/* FONT STACK------------------------------------------- */
+
+$font-sans-serif: "Raleway", sans-serif;
+$font-italic: "Raleway", italic;
+
+/* FONT WEIGHTS------------------------------------------ */
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 800;
+
+/* BORDER RADIUS------------------------------------------ */
+
+$br: 5px;
+
+/*  ASSET PATHS------------------------------------------- */
+
+$path-img: "../img";
+$path-font: "../fonts";
+
+// ============================================================
+//
+// ============================================================

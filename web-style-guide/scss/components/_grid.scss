@@ -1,0 +1,174 @@
+.container {
+  width: 90%;
+  margin: auto;
+  font-family: $font-sans-serif;
+}
+
+.grid {
+  text-align: left;
+  // .grid__row
+  &__row {
+    @include flexbox(flex, column, center) {
+      text-align: left;
+      margin-bottom: 20px;
+      @include tablet(100%, auto) {
+        @include flexbox(flex, row, center) {
+        }
+      }
+    }
+  }
+}
+
+.grid__col--3 {
+  margin: auto;
+  @include tablet(100%, auto) {
+    text-align: center;
+    flex-basis: 25%;
+  }
+  @include desktop(100%, auto) {
+    text-align: center;
+  }
+}
+
+.grid__col--4 {
+  @include tablet(100%, auto) {
+    text-align: center;
+    margin-top: 0;
+    flex-basis: 33.3333333333%;
+  }
+  @include desktop(100%, auto) {
+    text-align: center;
+  }
+}
+
+.grid__col--5 {
+  @include tablet(100%, auto) {
+    text-align: center;
+    flex-basis: 41.6666666667%;
+  }
+  @include desktop(100%, auto) {
+    text-align: center;
+    flex-basis: 41.6666666667%;
+  }
+}
+
+.grid__col--6 {
+  @include tablet(100%, auto) {
+    text-align: center;
+    flex-basis: 50%;
+  }
+  @include desktop(100%, auto) {
+    margin-left: 0;
+    margin-right: 150px;
+    float: left;
+    text-align: center;
+  }
+}
+
+.grid__col--7 {
+  @include tablet(100%, auto) {
+    text-align: center;
+    flex-basis: 58%;
+  }
+  @include desktop(100%, auto) {
+    flex-basis: 58%;
+    text-align: center;
+  }
+}
+
+.grid__col--8 {
+  @include tablet(100%, auto) {
+    text-align: center;
+    margin-top: 0;
+    margin-right: 60px;
+    flex-basis: 66.6666666667%;
+    @include desktop(100%, auto) {
+      text-align: center;
+      flex-basis: 66.6666666667%;
+    }
+  }
+}
+
+.grid__col--9 {
+  font-size: 16px;
+  color: $color-text-button;
+  text-decoration: none;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  @include tablet(100%, auto) {
+    text-align: center;
+    flex-basis: 75%;
+  }
+  @include desktop(100%, auto) {
+    text-align: center;
+  }
+}
+
+.grid__col--12 {
+  @include tablet(100%, auto) {
+    @include flexbox(flex, row, center) {
+      flex-basis: 100%;
+    }
+  }
+  @include desktop(100%, auto) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@include tablet(100%, auto) {
+  [class^="grid__col"] + [class^="grid__col"] {
+    margin-left: 10px;
+  }
+}
+
+// theme_color
+
+@mixin grid-bg($grid-bg) {
+  background: $grid-bg;
+}
+
+.theme__colors {
+  -webkit-border-radius: 5px;
+  background-clip: padding-box;
+  display: block;
+  width: 100%;
+  padding: 13px 40px;
+  border-radius: 5px;
+  margin: 0.1875em 0;
+  border: none;
+  color: $grey;
+  font-weight: $font-weight-semi-bold;
+}
+
+.theme__colors.grid__col--3 {
+  @include grid-bg($color-theme-col-3);
+}
+
+.theme__colors.grid__col--4 {
+  @include grid-bg($color-theme-col-4);
+}
+
+.theme__colors.grid__col--5 {
+  @include grid-bg($color-theme-col-5);
+}
+
+.theme__colors.grid__col--6 {
+  @include grid-bg($color-theme-col-6);
+}
+
+.theme__colors.grid__col--7 {
+  @include grid-bg($color-theme-col-7);
+}
+
+.theme__colors.grid__col--8 {
+  @include grid-bg($color-theme-col-8);
+}
+
+.theme__colors.grid__col--9 {
+  @include grid-bg($color-theme-col-9);
+}
+
+.theme__colors.grid__col--12 {
+  @include grid-bg($color-theme-col-12);
+}

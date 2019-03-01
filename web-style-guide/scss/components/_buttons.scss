@@ -1,0 +1,46 @@
+/* BUTTON ------------------------------------------- */
+
+@mixin button-g($bg) {
+  background: $bg;
+  &:hover {
+    background: darken ($bg, 8%);
+  }
+  &:active {
+    background: darken ($bg, 25%);
+  }
+}
+
+.btn {
+  @include flexbox(flex, row, center) {
+    width: 100%;
+    border-radius: $br;
+    background-clip: padding-box;
+    font-weight: $font-weight-bold;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    margin: 1.5625em 0;
+    border: none;
+    color: $white;
+    margin-right: 10px;
+  }
+}
+
+.btn-default {
+  @include button-bg($color-default);
+}
+
+.btn-success {
+  @include button-bg($color-success);
+}
+
+.btn-error {
+  @include button-bg($color-error);
+}
+
+.btn-warning {
+  @include button-bg($color-warning);
+}
+
+.btn-info {
+  @include button-bg($color-info);
+}
