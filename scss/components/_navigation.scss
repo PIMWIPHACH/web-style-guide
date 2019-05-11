@@ -1,0 +1,49 @@
+nav a {
+  &:link {
+    width: 100%;
+    display: block;
+    color: $grey;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  &:visited {
+    width: 100%;
+    display: block;
+    color: $white;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  &:hover {
+    width: 100%;
+    display: block;
+    color: $grey;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: $br;
+    background-color: $blue-green;
+  }
+  @include tablet(100%, auto) {
+    margin-left: 50px;
+  }
+}
+
+.nav__item a {
+  display: block;
+  color: $grey;
+  background-color: $white;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: $br;
+  background-clip: padding-box;
+  -webkit-border-radius: $br;
+  &:hover {
+    background-color: $blue-green;
+    color: $white;
+  }
+}

@@ -1,0 +1,49 @@
+/*  Breakpoint------------------------------------------- */
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1100px;
+
+$width: 100%;
+$margin: auto;
+
+/*  DESKTOP------------------------------------------- */
+
+@mixin desktop($width, $margin) {
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: $width;
+    margin: $margin;
+  }
+}
+
+/*  TABLET------------------------------------------- */
+
+@mixin tablet($width, $margin) {
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: $width;
+    margin: $margin;
+  }
+}
+
+/*  FLEXBOX------------------------------------------- */
+
+$display: flex;
+$flex-direction: row;
+$justify-content: center;
+
+@mixin flexbox($display, $flex-direction, $justify-content) {
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+}
+
+/*  WEB FONTS------------------------------------------- */
+
+@mixin font-face($family, $file) {
+  @font-face {
+    font-family: $family;
+    src: url("#{$path-font}/#{$file}.eot");
+    src: url("#{$path-font}/#{$file}.eot?#iefix") format("embedded-opentype"),
+      url("#{$path-font}/#{$file}.woff") format("woff"),
+      url("#{$path-font}/#{$file}.ttf") format("truetype");
+  }
+}

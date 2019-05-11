@@ -1,0 +1,29 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  @include tablet(100%, auto) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form__label--hidden {
+  font-weight: $font-weight-semi-bold;
+}
+
+.form__input {
+  border: none;
+  border-style: none;
+  border-bottom: 8px solid $blue-green;
+  padding: 0.25em;
+  margin: 10px;
+}
+
+.form img--avatar {
+  margin: 10px;
+}
+
+::-webkit-input-placeholder {
+  color: transparent;
+}

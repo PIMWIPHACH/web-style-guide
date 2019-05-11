@@ -1,0 +1,37 @@
+/*  BASE ------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin-left: 0px;
+}
+
+p {
+  text-align: left;
+}
+
+.link {
+  color: $color-bg;
+  font-weight: $font-weight-semi-bold;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.blockquote {
+  background: $white;
+  color: $grey;
+  font-style: $font-italic;
+  border-left: 10px solid $color-bg-headline;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  font-size: 1.25em;
+  border-radius: $br;
+}

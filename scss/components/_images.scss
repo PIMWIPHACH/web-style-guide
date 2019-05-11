@@ -1,0 +1,29 @@
+.img--frame {
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  width: 100%;
+  padding: 10px;
+  margin-right: 80px;
+  display: inline-block;
+  @include tablet(100%, auto) {
+    width: 100%;
+    margin: 0;
+  }
+  @include desktop(100%, auto) {
+    width: 100%;
+    margin-left: 80px;
+  }
+}
+
+.img--avatar {
+  display: block;
+  padding: 5px;
+}
+
+.img--logo {
+  display: inline-block;
+  margin: auto;
+  margin-top: 30px;
+  @include tablet(100%, auto) {
+    margin: auto;
+  }
+}

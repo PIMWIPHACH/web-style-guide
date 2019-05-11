@@ -1,0 +1,20 @@
+/*  WEB FONTS------------------------------------------- */
+
+@include font-face("Raleway Regular", "raleway-regular");
+
+.headline {
+  &--primary {
+    @include text(1.75em, 1.5, $weight: 800, $grey);
+    padding-left: 30px;
+  }
+
+  &--secondary {
+    @include text($weight: 400, $grey);
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+p {
+  @include text($color: $black);
+}
